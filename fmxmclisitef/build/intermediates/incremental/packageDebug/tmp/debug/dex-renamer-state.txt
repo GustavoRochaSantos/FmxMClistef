@@ -1,0 +1,4 @@
+#Mon Mar 29 11:27:59 BRT 2021
+base.0=D\:\\Trabalho\\FMX\\Projetos\\SoftwareExpress\\FMXMCliSitef\\ExternalLibraryProject\\fmxmclisitef\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

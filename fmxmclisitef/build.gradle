@@ -1,0 +1,64 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion ANDROID_COMPILE_SDK_VERSION
+
+    defaultConfig {
+        minSdkVersion ANDROID_MIN_SDK_VERSION
+        targetSdkVersion ANDROID_TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../key/Development_Rede_EnhancedAPP.jks")
+            storePassword "Development@Rede2018"
+            keyAlias "developmentrede_enhancedapp"
+            keyPassword "Development@Rede2018"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility ANDROID_JAVA_VERSION
+        targetCompatibility ANDROID_JAVA_VERSION
+    }
+
+    packagingOptions{
+        doNotStrip "**/libclisitef.so"
+    }
+}
+
+repositories {
+    maven { url "file:///D:\\Trabalho\\KEG\\Genexus\\FMX\\GeneXus15\\Android\\m2Repository\\" }
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+    flatDir {dirs 'libs'}
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: [])
+    implementation (name:'libgedi-gpos700-payment-release-1.14.15.3', ext:'aar'){
+        transitive = true
+    }
+    implementation (name:'ppcomp-debug-1.29.6.200422', ext:'aar'){
+        transitive = true
+    }
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.genexus:FlexibleClient:15.12-SNAPSHOT'
+}
+
+apply from: rootProject.file('gradle-mvn-push.gradle')

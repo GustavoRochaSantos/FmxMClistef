@@ -1,0 +1,41 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.genexusmodule"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:3:5-67
+11-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:4:5-80
+12-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:5:5-68
+13-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:5:22-65
+14
+15    <application>
+15-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:6:5-13:19
+16        <activity android:name="com.example.fmxpagto.TransactionActivity" >
+16-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:7:9-12:20
+16-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:7:19-74
+17            <intent-filter>
+17-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:8:13-11:29
+18                <action android:name="android.intent.action.MAIN" />
+18-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:9:17-69
+18-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:9:25-66
+19
+20                <category android:name="android.intent.category.LAUNCHER" />
+20-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:10:17-77
+20-->D:\Trabalho\FMX\Projetos\SoftwareExpress\FMXMCliSitef\ExternalLibraryProject\fmxmclisitef\src\main\AndroidManifest.xml:10:27-74
+21            </intent-filter>
+22        </activity>
+23    </application>
+24
+25</manifest>

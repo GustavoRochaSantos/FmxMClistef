@@ -1,0 +1,13 @@
+com/example/fmxpagto/FMXMCliSitefModule.java
+ com.example.fmxpagto.FMXMCliSitefModule
+com/example/genexusmodule/BuildConfig.java
+ com.example.genexusmodule.BuildConfig
+com/example/fmxpagto/TransactionActivity.java
+ com.example.fmxpagto.TransactionActivity
+ com.example.fmxpagto.TransactionActivity$1
+ com.example.fmxpagto.TransactionActivity$2
+ com.example.fmxpagto.TransactionActivity$3
+ com.example.fmxpagto.TransactionActivity$RequestCode
+com/example/fmxpagto/FmxMCliSitef.java
+ com.example.fmxpagto.FmxMCliSitef
+ com.example.fmxpagto.FmxMCliSitef$1

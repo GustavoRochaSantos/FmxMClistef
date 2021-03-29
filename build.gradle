@@ -1,0 +1,13 @@
+apply from: 'ext.gradle'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "file:///C:\\Program Files (x86)\\GeneXus\\GeneXus15\\Android\\m2Repository\\" }
+        flatDir {dirs 'libs'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Trabalho\\FMX\\Projetos\\SoftwareExpress\\FMXMCliSitef\\ExternalLibraryProject\\fmxmclisitef\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru\\values-ru.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\338d06d8e8bee7dee0da78f4d782404d\\transformed\\res\\values-ru\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,388,586,710,818,1019,1146,1275,1515,1620,1814,1938,2164,2348,2443,2529",
+                        "endColumns": "104,197,123,107,200,126,128,239,104,193,123,225,183,94,85,110",
+                        "endOffsets": "387,585,709,817,1018,1145,1274,1514,1619,1813,1937,2163,2347,2442,2528,2639"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,37,38,39,40,41,42,43,44,45",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2832,2941,3139,3267,3379,3580,3711,4060,4300,4409,4603,4731,4957,5145,5244,5334",
+                        "endColumns": "108,197,127,111,200,130,132,239,108,193,127,225,187,98,89,114",
+                        "endOffsets": "2936,3134,3262,3374,3575,3706,3839,4295,4404,4598,4726,4952,5140,5239,5329,5444"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\f489b265a2f372a009e64392c3be20a9\\transformed\\res\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "5842",
+                        "endColumns": "100",
+                        "endOffsets": "5938"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\681344429cc00ecbed1cf8d6aef5ae95\\transformed\\res\\values-ru\\values.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "0,0",
+                        "startOffsets": "233,344",
+                        "endColumns": "110,90",
+                        "endOffsets": "343,434"
+                    },
+                    "to": {
+                        "startLines": "47,48",
+                        "startColumns": "4,4",
+                        "startOffsets": "5551,5666",
+                        "endColumns": "114,94",
+                        "endOffsets": "5661,5756"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\35d36b4426de115d4303589986ac70ba\\transformed\\res\\values-ru\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "230",
+                        "endColumns": "97",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "46",
+                        "startColumns": "4",
+                        "startOffsets": "5449",
+                        "endColumns": "101",
+                        "endOffsets": "5546"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\84dd6e199388e8350450659d1e6ef759\\transformed\\res\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,322,434,520,625,745,824,902,994,1088,1184,1277,1373,1467,1563,1658,1750,1842,1922,2028,2136,2234,2343,2449,2557,2732,2832",
+                        "endColumns": "114,101,111,85,104,119,78,77,91,93,95,92,95,93,95,94,91,91,79,105,107,97,108,105,107,174,99,80",
+                        "endOffsets": "215,317,429,515,620,740,819,897,989,1083,1179,1272,1368,1462,1558,1653,1745,1837,1917,2023,2131,2229,2338,2444,2552,2727,2827,2908"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,49",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,322,434,520,625,745,824,902,994,1088,1184,1277,1373,1467,1563,1658,1750,1842,1922,2028,2136,2234,2343,2449,2557,2732,5761",
+                        "endColumns": "114,101,111,85,104,119,78,77,91,93,95,92,95,93,95,94,91,91,79,105,107,97,108,105,107,174,99,80",
+                        "endOffsets": "215,317,429,515,620,740,819,897,989,1083,1179,1272,1368,1462,1558,1653,1745,1837,1917,2023,2131,2229,2338,2444,2552,2727,2827,5837"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\8d580afa1414fdbf34323aebe7450119\\transformed\\res\\values-ru\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "215",
+                        "endOffsets": "500"
+                    },
+                    "to": {
+                        "startLines": "36",
+                        "startColumns": "4",
+                        "startOffsets": "3844",
+                        "endColumns": "215",
+                        "endOffsets": "4055"
+                    }
+                }
+            ]
+        }
+    ]
+}

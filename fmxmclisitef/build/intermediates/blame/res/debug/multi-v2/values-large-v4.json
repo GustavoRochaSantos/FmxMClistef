@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Trabalho\\FMX\\Projetos\\SoftwareExpress\\FMXMCliSitef\\ExternalLibraryProject\\fmxmclisitef\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\ea6546b5e4b4fa225e968be945ac8b38\\transformed\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "44",
+                        "endOffsets": "95"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "532",
+                        "endColumns": "44",
+                        "endOffsets": "572"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\84dd6e199388e8350450659d1e6ef759\\transformed\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,577,681",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,676,792"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KEGSoftware\\.gradle\\caches\\transforms-3\\94caea4c3d03578796ce7b5654075faf\\transformed\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "12,13",
+                        "startColumns": "4,4",
+                        "startOffsets": "797,919",
+                        "endColumns": "121,133",
+                        "endOffsets": "914,1048"
+                    }
+                }
+            ]
+        }
+    ]
+}

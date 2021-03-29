@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Express Pagamentos</string>
+    <!-- TRANSACTION SCREEN-->
+    <string name="tvTitle">Express - Pagamentos</string>
+    <string name="btConfigure">Configuration</string>
+    <string name="btAdmin">Administrative</string>
+    <string name="btTransaction">Transaction</string>
+    <string name="lbSiTefIP">SiTef Server IP</string>
+    <string name="lbStoreId">Store ID</string>
+    <string name="lbTerminalId">Terminal ID</string>
+    <string name="edCfgTerminalId">SE000001</string>
+    <string name="edCfgStoreId">00000001</string>
+    <string name="edCfgSiTefIP">192.168.0.1</string>
+    <string name="btCfgCancel">Cancelar</string>
+    <string name="btCfgConfigure">Configure</string>
+    <string name="btDlgOk">OK</string>
+    <string name="btDlgCancel">Cancelar</string>
+    <string name="btMenuCancel">Cancelar</string>
+    <string name="btYNYes">Yes</string>
+    <string name="btYNNo">No</string>
+    <string name="btYNCancel">Cancelar</string>
+    <string name="tvConfigure">Terminal Setup</string>
+    <string name="tvTransaction">Express - Pagamentos</string>
+    <string name="imgLogo"></string>
+    <string name="msgModuloNaoConfigurado">Módulo não iniciado</string>
+    <string name="msgCanceladoOperador">Cancelado pelo operador</string>
+    <string name="msgFuncaoInvalida">Código de Função Inválida</string>
+    <string name="msgFaltaMemoria">Estouro de Memória</string>
+    <string name="msgFalhaComunicacao">Erro de comunicação com o Sitef</string>
+    <string name="msgCanceladoPortador">Cancelado pela operadora</string>
+    <string name="msgNegadaSiTef">Transação recusada pelo SiTef</string>
+    <string name="msgErroPinPad">Erro de comunicação com o Sitef</string>
+    <string name="msgOutrosErros">Outros erros</string>
+    <string name="msgReturned">retornado</string>
+    <string name="msgPPSearching">Procurando PINPAD</string>
+    <string name="msgPPConfiguring">Pinpad conectado, por favor aguarde&#8230;</string>
+    <string name="msgPPConfigured">Pinpad OK, prosseguindo com a transação&#8230;</string>
+    <string name="msgPPDisconnected">Pinpad desconectado</string>
+</resources>

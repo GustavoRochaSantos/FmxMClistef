@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.genexus:gxstdclasses-android:15.12-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../KEG/Genexus/FMX/GeneXus15/Android/m2Repository/com/genexus/gxstdclasses-android/15.12-SNAPSHOT/gxstdclasses-android-15.12-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
