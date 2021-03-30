@@ -380,6 +380,11 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == RequestCode.GET_DATA) {
             if (resultCode == RESULT_OK) {

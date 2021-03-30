@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./fmxmclisitef/libs/clisitef-android.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/fmxmclisitef/libs/clisitef-android.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
