@@ -19,6 +19,7 @@ import br.com.softwareexpress.sitef.android.ICliSiTefListener;
 import wangpos.sdk4.libbasebinder.Printer;
 
 public class TransactionActivity extends Activity implements ICliSiTefListener {
+
     private static final int CAMPO_COMPROVANTE_CLIENTE = 121;
     private static final int CAMPO_COMPROVANTE_ESTAB = 122;
     private static final int CAMPO_COD_AUTORIZACAO_CREDITO = 135;
@@ -105,9 +106,7 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.e("NOBRE", "Cancelando");
-                clisitef.abortTransaction(-1);
                 returnData("ERRO: Cancelado pelo usuário;");
-
             }
         });
 
@@ -137,6 +136,7 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
 
         //vReturn = clisitef.startTransaction (this, 0, "1222,00", "123456", "23/03/2021", "11:10", "GUSTAVO", "[]");
         vReturn = clisitef.startTransaction (this, funcao, value, cupom, date, hour, operator, "[]");
+
         if (funcao==114) {
             btn.setVisibility(View.GONE);
             setStatus("Imprimindo...");
@@ -162,6 +162,7 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
         String data = "";
         Button btn = (Button) findViewById(R.id.btCfgCancela);
         setProgressBarIndeterminateVisibility(false);
+
 
         if (stage == 1) {
             // Evento onData recebido em uma startTransaction
@@ -261,6 +262,7 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
                 return;
             }
             case CliSiTef.CMD_GET_FIELD_CURRENCY:
+                clisitef.continueTransaction("0");
             case CliSiTef.CMD_GET_FIELD_BARCODE:
             case CliSiTef.CMD_GET_FIELD: {
                 switch(mensagem.trim()){
@@ -281,6 +283,10 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
                     case "1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;":
                         clisitef.continueTransaction("3");
                         return;
+                    case "1:A Vista;2:Financ. Loja;3:Financ. Adm.;":
+                        clisitef.continueTransaction("1");
+                        return;
+
                 }
 
 
@@ -348,7 +354,7 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
     public void onTransactionResult(int stage, int resultCode) {
         setProgressBarIndeterminateVisibility(false);
         trnResultCode = resultCode;
-        //alert ("Fim do estágio " + stage + ", retorno " + resultCode);
+        Log.e("onTransactionResult", String.valueOf(resultCode));
         if (stage == 1 && resultCode == 0) { // Confirm the transaction
             try {
                 Log.e("FinalMessage", mPrintedData);
@@ -367,15 +373,12 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
             if (resultCode == 0) {
                 finish();
             } else {
-
                 returnData(getMessageDescription(stage, resultCode));
-                /*
-                Intent i = new Intent(getApplicationContext(), MessageActivity.class);
-
-                i.putExtra("message", getMessageDescription(stage, resultCode));
-                startActivityForResult(i, stage == 1 ? RequestCode.END_STAGE_1_MSG : RequestCode.END_STAGE_2_MSG);
-
-                 */
+                try {
+                    clisitef.finishTransaction(1);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -456,15 +459,21 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
         }
     }
 
-    private void returnData(String errorMsg){
-
+    private void returnData(String errorMsg) {
+        try {
         Intent data = new Intent();
         data.putExtra("retorno", errorMsg);
         setResult(Activity.RESULT_OK, data);
 
         Log.e("FinalMessage", mPrintedData);
         clisitef.abortTransaction(-1);
+        clisitef.finishTransaction(1);
         finish();
+        } catch(Exception ex){}
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 
