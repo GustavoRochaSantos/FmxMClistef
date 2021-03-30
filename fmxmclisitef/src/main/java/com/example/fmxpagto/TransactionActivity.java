@@ -101,11 +101,11 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
         cupom = getIntent().getStringExtra("cupom");
         funcao = Integer.parseInt(getIntent().getStringExtra("funcao"));
 
-        //TODO - verificar se é para remover este botão - não está sendo utilizado
         Button btn = (Button) findViewById(R.id.btCfgCancela);
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.e("NOBRE", "Cancelando");
+                clisitef.abortTransaction(-1);
                 returnData("ERRO: Cancelado pelo usuário;");
             }
         });
@@ -469,7 +469,7 @@ public class TransactionActivity extends Activity implements ICliSiTefListener {
 
     @Override
     public void onBackPressed() {
-
+        Log.d("VOLTAR", "PRESSIONOU O BOTAO FÍSICO");
     }
 
 }
